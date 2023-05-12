@@ -1,0 +1,62 @@
+.journals {
+  background-color: #312f2e;
+
+  &__container {
+  }
+
+  &__wrap {
+    min-height: 436px;
+    display: flex;
+    padding: 127px 0;
+  }
+
+  &__content {
+    padding: 90px 131px 93px 93px;
+    background-color: #fff;
+  }
+
+  &__heading {
+    margin-bottom: 20px;
+    font-size: 38px;
+    line-height: 46px;
+  }
+
+  &__text {
+    margin-bottom: 32px;
+    font-size: 15px;
+    line-height: 21px;
+  }
+
+  &__link {
+    position: relative;
+    font-size: 14px;
+    line-height: 21px;
+    transition: color .5s ease-in;
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 110%;
+      height: 1px;
+      width: 110%;
+      background-color: #1a1a1a;
+      transition: width .5s ease-in, background-color .5s ease-in;
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: #7e6e45;
+        &::after {
+          width: 100%;
+          background-color: #7e6e45;
+        }
+      }
+    }
+  }
+
+  &__img {
+
+  }
+}
+.container {
+}

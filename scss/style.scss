@@ -1,0 +1,33 @@
+@import "reset";
+@import "btn";
+@import "header";
+@import "hero";
+@import "goods";
+@import "goods-card";
+@import "simplest";
+@import "journals";
+@import "mission";
+@import "our-story";
+@import "contact";
+@import "footer";
+
+body {
+  color: #1a1a1a;
+  font-family: "Roboto";
+}
+
+a {
+  color: inherit;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
