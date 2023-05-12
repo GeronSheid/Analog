@@ -1,0 +1,57 @@
+.hero {
+  padding-bottom: 20px;
+  &__img-container {
+    position: relative;
+    min-height: 600px;
+    width: 100%;
+    overflow: hidden;
+    padding: 0 0 38% 0;
+    & img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+    }
+  }
+  
+  &__content-wrap {
+    position: absolute;
+    bottom: 30px;
+    left: 130px;
+    color: #fff
+  }
+
+  &__heading {
+    font-size: 18px;
+    line-height: 29px;
+  }
+
+  &__link {
+    position: relative;
+    font-size: 15px;
+    line-height: 23px;
+    transition: color .5s ease-in;
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 110%;
+      height: 1px;
+      width: 115%;
+      background-color: #fff;
+      transition: width .5s ease-in, background-color .5s ease-in;
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: #7e6e45;
+        &::after {
+          width: 100%;
+          background-color: #7e6e45;
+        }
+      }
+    }
+  }
+}

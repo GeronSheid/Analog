@@ -1,0 +1,58 @@
+.our-story {
+
+  &__img-wrap {
+    position: relative;
+    width: 100%;
+    padding: 0 0 37% 0;
+    & img {
+      position: absolute;
+      top: 0;
+      height: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 23.8%;
+    width: 782px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+  }
+
+  &__heading {
+    font-size: 35px;
+    line-height: 54px;
+    text-align: center;
+  }
+
+  &__link {
+    position: relative;
+    font-size: 15px;
+    line-height: 23px;
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 100%;
+      height: 1px;
+      width: 110%;
+      background-color: #fff;
+      transition: width .5s ease-in;
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
